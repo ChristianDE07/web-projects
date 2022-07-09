@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        user-select: text;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.orange {
+    color: #D35400;
+    font-size: 8px;
+}
+
+img {
+    pointer-events: none;
+}
+
+//  Variables
+$white: #FEFEFE;
+$grey: #BABABA;
+$black: #061814;
+$green: #305B55;
+$brown: #4C2C1E;
+$dark-grey: #5D5E5E;
+$beige: #907466;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    color: $black;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+p,
+a,
+li,
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+a,
+button {
+    color: $black;
+    font-weight: bold;
+}
+
+p,
+li {
+    color: $grey;
+}
+
+
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #FEFEFE;
+
+    header {
+        nav {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: solid 1px #BABABA;
+
+            ul {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15px;
+                width: 33%;
+
+                li {
+                    padding: 0 5px;
+
+                    button {
+                        width: auto;
+                        height: 100%;
+                        background-color: #061814;
+                        color: #FBFBFB;
+                        padding: 15px;
+                    }
+                }
+            }
+
+            ul.left {
+                float: left;
+            }
+
+            ul.middle {
+                float: middle;
+            }
+
+            ul.right {
+                float: right;
+            }
+        }
+    }
+
+    section.content {
+        max-width: 1400px;
+        min-height: 650px;
+        height: auto;
+        background-color: #FEFEFE;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .left {
+            width: auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+
+            .links {
+                width: 100%;
+                height: auto;
+            }
+
+            .container {
+                width: auto;
+                height: auto;
+
+                .top {
+                    p {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    i.orange {
+                        padding: 0 5px;
+                    }
+                }
+
+                .context {
+                    width: 500px;
+                    height: 240px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .bottom {
+                    display: inline-flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+
+        .right {
+            max-width: 600px;
+            height: auto;
+
+            .top {
+                padding: 10px 0;
+
+                h4 {
+                    padding: 10px 0;
+                    color: $black;
+                    font-size: large;
+                }
+
+                p {
+                    padding: 5px 0;
+                    color: $grey;
+                }
+
+                .sea-blue {
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+// Chosen or Not
+.chosen {
+    color: $black;
+}
+
+.not-chosen {
+    color: $grey;
+}
+
+//  Articles here
+
+
+//  Media All / Responsive Design
+@media all and (max-width: 768px) {
+    section.content {
+        display: block;
+        width: 100%;
+
+        .left {
+            display: block;
+            width: 100%;
+            padding: 15px 10px;
+
+            .links {
+                width: 100%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                button {
+                    width: auto;
+                    height: auto;
+                    padding: 15px;
+                    margin: 15px auto;
+                }
+            }
+
+            .container {
+                width: 50%;
+
+                h1,
+                p {
+                    padding: 5px 0;
+                }
+
+                img {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+            width: auto;
+            padding: 15px 10px;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+    section.content {
+        display: block;
+        width: 100%;
+
+        .left {
+            display: inline-flex;
+            width: 100%;
+            padding: 35px 10px;
+
+            .links {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                button {
+                    width: auto;
+                    height: auto;
+                    padding: 15px;
+                    margin: 15px auto;
+                }
+            }
+
+            .container {
+                padding: 0 65px;
+
+                h1,
+                p {
+                    padding: 5px 0;
+                }
+
+                img {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+            width: auto;
+            padding: 35px 65px;
+        }
+    }
+}
+
+@media all and (min-width: 1280px) {
+    section.content {
+        display: inline-flex;
+        width: 100%;
+
+        .left {
+            display: inline-flex;
+            width: 100%;
+            padding: 15px 10px;
+            border-right: solid 1px $grey;
+
+            .links {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                button {
+                    width: auto;
+                    height: auto;
+                    padding: 15px;
+                    margin: 15px auto;
+                }
+            }
+
+            .container {
+                padding: 0 65px;
+
+                h1,
+                p {
+                    padding: 5px 0;
+                }
+
+                img {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+
+                .bottom {
+                    position: absolute;
+                    bottom: 85px;
+                }
+            }
+        }
+
+        .right {
+            padding: 15px 65px;
+
+            .bottom {
+                position: absolute;
+                bottom: 85px;
+            }
+        }
+    }
+}

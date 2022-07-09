@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.details{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	background-color: #F4F6F7;
+	padding: 60px 0px 60px 0px;
+}
+.details .details-container{
+	width: 100%;
+}
+/* Details Left Content */
+.details .details-container .details-left h2{
+	font-family: sans-serif;
+	max-width: auto;
+	color: #1A1A1A;
+	margin: 10px 0px;
+}
+.details .details-container .details-left h5{
+	line-height: 18px;
+	font-family: sans-serif;
+	max-width: auto;
+	color: #1A1A1A;
+	margin: 10px 0px;
+}
+.details .details-container .details-left button{
+	margin: 15px 0px;
+}
+
+/* Details Right */
+.details .details-container .details-right{
+	font-family: sans-serif;
+	color: #1A1A1A;
+	margin: 15px;
+}
+
+/* Details Days */
+.details .details-container .details-days{
+	font-family: sans-serif;
+	color: #1A1A1A;
+	background-color: #ECF0F1;
+}
+
+/* Details Day */
+.details .details-container .details-day{
+	font-family: sans-serif;
+	color: #1A1A1A;
+	margin: 2px 0px;
+	display: flex;
+	background-color: #F4F6F7;
+	padding-top: 15px;
+}
+.details .details-container .details-day h4{
+	min-width: 65px;
+}
+.details .details-container .details-day i{
+	min-width: 25px;
+	font-size: 18px;
+}
+.details .details-container .details-day i.dot-blue{
+	font-size: 8px;
+	color: #55A1F2;
+	text-align: center;
+}
+
+/* Details Day Content */
+.details .details-container .details-day .details-day-content p{
+	margin: 10px 0px;
+	display: flex;
+	align-items: center;
+}
+.details .details-container .details-day .details-day-content h5{
+	line-height: 18px;
+	margin: 15px 0px;
+}

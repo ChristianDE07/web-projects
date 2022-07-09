@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian De">
+    <meta name="description" content="Login and Sign Up Form by Christian De. This is actually a portfolio project, so it isn't a real website login/sign up form.">
+    <meta name="keywords" content="login, sign up, form, christian, christian de, mydevmood, website, portfolio, project, developped and designed, Klaus Dieter vom Wangenheim, pixabay, picture">
+    <meta name="reply-to" content="contact@mydevmood.com">
+    <meta name="robots" content="index, follow">
+    <!-- Titre du site -->
+    <title>SignUp Form - Portfolio Project by Christian De - Mydevmood.com</title>
+    <!-- Favicon du Site -->
+    <link rel="shortcut icon" type="image/jpg" href="https://assets.mydevmood.com/img/favicon.jpg">
+    <!-- SCSS Imports -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- JAVASCRIPT Imports -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Fontawesome Kit Code -->
+    <script src="https://kit.fontawesome.com/7febc46414.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-circle blue-circle"></i><h3>Mydevmood</h3>
+                <h3 class="blue-circle">.</h3>
+                <h3>com</h3></h3>
+            </li>
+            <label for="toggle"><i class="fa-solid fa-square-caret-down"></i></label>
+            <input type="checkbox" id="toggle">
+            <div id="links">
+                <li><a href="#home" class="grey-link">Home</a></li>
+                <li><a href="#join-us" class="grey-link">Join</a></li>
+            </div>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="head-hero">
+            <div>
+                <h4 class="grey-h4">Start for free</h4>
+            </div>
+            <div class="title-head">
+                <h1>Create new Account</h1>
+                <h1 class="blue-circle">.</h1>
+            </div>
+            <div class="already-head">
+                <p class="grey-para">Already A Member?</p>
+                <a href="#login">Log in</a>
+            </div>
+        </div>
+        <div class="all-inputs">
+            <div class="in-names">
+                <div class="inputs">
+                    <div class="left-in">
+                        <input id="first-name" type="name" placeholder="John">
+                    </div>
+                    <div class="right-in">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="left-in">
+                        <input id="last-name" type="name" placeholder="Doe">
+                    </div>
+                    <div class="right-in">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="left-in">
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <div class="right-in">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="left-in">
+                    <input id="passInputNormal" type="password" placeholder="My Best Password">
+                </div>
+                <div class="right-in">
+                    <a href="#" onclick="seeMyPassword()"><i class="fa-solid fa-eye"></i></a>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="left-in">
+                    <input id="passInputRetype" type="password" placeholder="Retype Your Best Password">
+                </div>
+                <div class="right-in">
+                    <a href="#" onclick="seeMyPassword()"><i class="fa-solid fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="submits">
+            <div class="sub-content">
+                <h5 style="padding: 0 0 8px 0;">Image par <a href="https://pixabay.com/fr/users/klausdie-1197817/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=862870">Klaus Dieter vom Wangenheim</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=862870">Pixabay</a></h5>
+                <button class="verify-button" onclick="verifyFormular()">Verify and Submit</button>
+                <h4 id="success-message" style="color: greenyellow;"></h4>
+                <h4 id="error-message" style="color: red;"></h4>
+                <style>div.submits div.sub-content h4{
+                    padding: 2px 0 0 0;
+                }</style>
+            </div>
+        </div>
+        <script>
+            function verifyFormular(){
+                // Messages
+                var success_message = document.getElementById("success-message");
+                var error_message = document.getElementById("error-message");
+                // Informations
+                var first_name = document.getElementById("first-name").value;
+                var last_name = document.getElementById("last-name").value;
+                var email = document.getElementById("email").value;
+                // Passwords
+                var normalPass = document.getElementById("passInputNormal").value;
+                var retypePass = document.getElementById("passInputRetype").value;
+
+                if(first_name == null || first_name == "" || last_name == null || last_name == "" || email == null || email == "" || normalPass == null || normalPass == "" || retypePass == null || retypePass == "") {
+                    error_message.innerText = "You must enter your First Name, Last Name, Email and your Passwords!";
+                }else{
+                    if(email.includes("@") && email.includes(".")) {
+                        if(normalPass == null || retypePass == null || normalPass == "" || retypePass == "") {
+                            error_message.innerText = "You must enter your passwords to continue!";
+                        }else{
+                            if(normalPass.length >= 9 && retypePass.length >= 9) {
+                                if(normalPass == retypePass) {
+                                    success_message.innerText = "You can go ;)";
+                                    error_message.innerText = "No errors during the process!";
+                                }else{
+                                    error_message.innerText = "Passwords are not the same!";
+                                }
+                            }else{
+                                error_message.innerText = "Passwords are not longer than 9 characters!";
+                            }
+                        }
+                    }else{
+                        error_message.innerText = "Please enter a valid email address!";
+                    }
+                }
+
+            }
+        </script>
+    </section>
+</header>
+</body>
+</html>

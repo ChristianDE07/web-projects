@@ -1,0 +1,150 @@
+/* Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Most Important */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../../assets/images/banners/mountains.svg');
+	backdrop-filter: blur(8px);
+	background-position: center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-color: #FBFBFB;
+}
+
+/* Specials */
+h1, h2, h3, h4, h5, h6, p, a, li{
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+	color: #07190F;
+}
+a, p{
+	text-decoration: none;
+	color: #1C2833;
+	transition: 0.4s;
+}
+/* Buttons */
+button:hover{
+	cursor: pointer;
+}
+ul.middle a:hover, ul.right button:hover{
+	color: #F0F3F4;
+	text-shadow: 0px 0px 12px black;
+	background-color: #1C2833;
+}
+
+/* Special Classes */
+.site-title i{
+	position: absolute;
+	top: 8px;
+	color: orange;
+	font-size: 8px;
+}
+.targeted{
+	color: black;
+	font-weight: bold;
+}
+.xtreme-h1{
+	font-size: 65px;
+}
+
+
+/* Little Screen / Smartphone */
+@media all and (max-width: 768px) {
+	.site-title i{
+		position: absolute;
+		top: -4px;
+		color: orange;
+		font-size: 8px;
+	}
+	header nav{
+		padding: 0 0;
+		position: relative;
+		width: 100%;
+		min-height: 65px;
+	}
+	header nav ul.left{
+		position: absolute;
+		left: 0;
+	}
+	header nav ul.middle{
+		background-color: #ECF0F1;
+	}
+	header nav ul.right{
+		position: absolute;
+		right: 0;
+	}
+	header nav ul#links {
+		display: none;
+	}
+	header nav ul#links a{
+		padding: 14px 16px;
+	}
+	header nav label{
+		position: relative;
+		width: 35px;
+		height: 35px;
+		display: block;
+		cursor: pointer;
+		font-size: 35px;
+		text-align: center;
+	}
+    #toggle:checked + #links{
+        display: block;
+    }
+	header nav ul.middle{
+		position: absolute;
+		top: 65px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+	header section{
+		padding: 24% 45px;
+		text-align: left;
+	}
+}
+/* Medium Screen */
+@media all and (min-width: 768px) and (max-width: 1280px) {
+	body{
+
+	}
+	header nav{
+		padding: 0 5%;
+		position: relative;
+		width: 90%;
+		min-height: 65px;
+	}
+	header nav ul#links a{
+		padding: 10px 2px;
+	}
+	header section{
+		padding: 12% 15%;
+		text-align: center;
+	}
+}
+/* Big Screen */
+@media all and (min-width: 1280px) {
+	body{
+
+	}
+	header nav{
+		padding: 0 16%;
+		position: relative;
+		width: 68%;
+		min-height: 65px;
+	}
+	header nav ul#links a{
+		padding: 12px 16px;
+	}
+	header section{
+		padding: 8% 25%;
+		text-align: center;
+	}
+}

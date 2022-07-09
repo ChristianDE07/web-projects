@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Portfolio - Mydevmood.com</title>
+  <link rel="shortcut icon" href="assets/img/favicon-resized.ico" type="image/x-icon">
+
+  <!-- Metadonnées -->
+  <meta name="author" content="Christian Dedden">
+  <meta name="description" content="Portfolio de Christian De. Développement, Design, Graphisme, Jeux, etc.">
+  <meta name="keywords"
+    content="chris de, chrisde, christian, dedden, christian dedden, chrisde.fr, doodle, art, doodleart, instagram, insta, manga, mangas, manga art, artist, e-art, eart, e art, numeric art, numeric, computer art, computer, portfolio, image, images, website, site, web site, web, art website, mydevmood.com, mydevmood, developper mood">
+  <!-- /Metadonnées -->
+
+  <!-- Chargement Page -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- /CSS -->
+  <!-- JS -->
+  <script src="./assets/js/main.js"></script>
+  <!-- /JS -->
+  <!-- /Chargement Page -->
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/7febc46414.js" crossorigin="anonymous"></script>
+
+  <nav>
+    <ul>
+      <div>
+        <li><a href="#">
+            <h1>Mydevmood</h1>
+          </a></li>
+      </div>
+      <label for="toggle"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="toggle">
+      <div class="main_pages">
+        <li><a href="#">
+            <p>Home</p>
+          </a></li>
+        <li><a href="https://book.mydevmood.com/">
+            <p>Book</p>
+          </a></li>
+        <li><a href="https://instagram.com/christian_dessins/">
+            <p>Instagram</p>
+          </a></li>
+        <li><a href="./art/">
+            <p>Art</p>
+          </a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="text-center scroll-down">
+      <a href="#scroll-down"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </header>
+
+  <div id="scroll-down" class="container">
+    <div id="content1" class="box">
+      <img src="./assets/img/cards/card-blog.jpg" draggable="false"
+        alt="Mydevmood's Blog - This is my own Blog for proposing you my tricks to code and draw. Mydevmood.com">
+      <a href="https://blog.mydevmood.com/">
+        <h2>Blog - Mydevmood.com</h2>
+        <p>This is the blog of Mydevmood.com, in whitch I will share you my developpers tricks and news about my
+          projects and about what I'm doing at this time.[...]</p>
+      </a>
+    </div>
+    <div id="content2" class="box">
+      <img src="./assets/img/cards/card-book.jpg" draggable="false"
+        alt="My Book Website to share with you all my drawing and designs made by me that I've already post on Instagram : @christian_dessins Mydevmood.com">
+      <a href="https://book.mydevmood.com/">
+        <h2>Book - Mydevmood.com</h2>
+        <p>On this page you'll see all my drawing that I've already posts on my Instagram.
+      </a><a href="https://instagram.com/christian_dessins/">@christian_dessins [...]</a></p>
+    </div>
+    <div id="content3" class="box">
+      <img src="./assets/img/cards/card-sploofi.jpg" draggable="false"
+        alt="Sploofi Discord Bot - My first Discord bot that i've ever created with nodejs. Mydevmood.com">
+      <a href="https://sploofi.mydevmood.com/">
+        <h2>Sploofi Discord Bot</h2>
+        <p>Sploofi is a polivalent Discord Bot for your Discord server. He can be also fun for your users.[...]</p>
+      </a>
+    </div>
+    <div id="content4" class="box">
+      <img src="./assets/img/cards/card-repasmaison.jpg" draggable="false"
+        alt="Repasfaitmaison.com - Food website with Wordpress">
+      <a href="https://repasmaison.mydevmood.com/">
+        <h2>RepasFaitMaison.com</h2>
+        <p>RepasFaitMaison.com est un site wordpress que j'ai décidé de crée pour vous partager mes recettes favorites
+          et mes dernières trouvailles sous formes de recettes que vous pourrez ensuite reproduire chez vous à la maison
+          pour pouvoir ensuite les déguster.[...]</p>
+      </a>
+    </div>
+    <div id="content5" class="box">
+      <img src="./assets/img/cards/card-agence.jpg" draggable="false"
+        alt="Agency Website temlplate coded with a udemy course Mydevmood.com">
+      <a href="https://projects.mydevmood.com/agenceweb/">
+        <h2>Agency Website Template - CodeLearn with Udemy</h2>
+        <p>This is one of the amount of projects that i will create with my lessons of learn to code with Udemy. That's
+          why I named the title "CodeLearn" because it's what I am actually learning to code with HTML5, CSS3,
+          Javascript, PHP (with MySql), and others thing.[...]</p>
+      </a>
+    </div>
+    <div id="content6" class="box">
+      <img src="./assets/img/cards/card-setup.jpg" draggable="false" alt="Setup / Stuff Website Page Mydevmood.com">
+      <a href="https://setup.mydevmood.com/">
+        <h2>My Stuff</h2>
+        <p>This is my last project yet. I hope you will find it good and that it will inspire you to create your own
+          setup to code, work and/or play video games, or if your a youtuber or streamer to stream or make video with
+          it.[...]</p>
+      </a>
+    </div>
+  </div>
+
+  <form method="POST" action="" class="contact">
+    <div class="form-group text-center">
+      <label for="exampleFormControlInput1">
+        <h4>Full name</h4>
+      </label>
+      <input name="nom" type="text" class="form-control" id="exampleFormControlInput1" placeholder="John doe"
+        value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>">
+    </div>
+    <div class="form-group text-center">
+      <label for="exampleFormControlInput1">
+        <h4>Email address</h4>
+      </label>
+      <input name="mail" type="email" class="form-control" id="exampleFormControlInput1"
+        placeholder="john.doe@example.com" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>">
+    </div>
+    <div class="form-group text-center">
+      <label for="exampleFormControlTextarea1">
+        <h4>Message</h4>
+      </label>
+      <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+        rows="3"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea>
+    </div>
+    <button type="submit" value="Envoyer !" name="mailform" class="center-x font-smooth">Submit <i
+        class="fas fa-paper-plane"></i></button>
+  </form>
+  <?php if(isset($msg)) {
+  echo $msg;
+}
+?>
+
+  <!--  FOOTER PART  -->
+  <footer>
+    <div class="text-center">
+      <h1>&copy;2021 Mydevmood.com</h1>
+      <p>A Description</p>
+      <p>Another Description here</p>
+    </div>
+    <div class="social-links text-center">
+      <a href="https://mydevmood.com/"><i class="fas fa-globe"></i></a>
+      <a href="https://instagram.com/christian_dessins/"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/ChristianDE07/AbtMyself"><i class="fab fa-github"></i></a>
+      <a href="#codepen.io"><i class="fab fa-codepen"></i></a>
+      <a href="mailto:contact@mydevmood.com"><i class="fas fa-at"></i></a>
+    </div>
+  </footer>
+  </div>
+
+</body>
+
+</html>
+
+<?php
+if(isset($_POST['mailform'])) {
+   if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message'])) {
+      $header="MIME-Version: 1.0\r\n";
+      $header.='From:"Contact - Mydevmood.com"<contact@mydevmood.com>'."\n";
+      $header.='Content-Type:text/html; charset="uft-8"'."\n";
+      $header.='Content-Transfer-Encoding: 8bit';
+      $message='
+      <html>
+         <body>
+            <div align="center">
+               <br>
+               <h2><u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'</h2><br>
+               <h2><u>Mail de l\'expéditeur :</u>'.$_POST['mail'].'</h2><br>
+               <br>
+               <h2>Message :</h2>
+               <p>
+               '.nl2br($_POST['message']).'
+               </p>
+               <br>
+            </div>
+         </body>
+      </html>
+      ';
+      mail("admin@mydevmood.com", "Sujet du message", $message, $header);
+      $msg="Votre message a bien été envoyé !";
+   } else {
+      $msg="Tous les champs doivent être complétés !";
+   }
+}
+?>

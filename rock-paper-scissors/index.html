@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pierre Feuille Ciseaux</title>
+</head>
+<body>
+	<h1 style="text-align:center;">Pierre Feuille Ciseaux</h1>
+	<div class="box">
+	  <section id="jeu">
+	    <div class="case">
+	      <button style="width: 90%; height:90%;" class="bg-img-a">Pierre</button>
+	    </div>
+	    <div class="case">
+	      <button style="width: 90%; height:90%;" class="bg-img-b">Feuilles</button>
+	    </div>
+	    <div class="case">
+	      <button style="width: 90%; height:90%;" class="bg-img-c">Ciseaux</button>
+	    </div>
+	  </section>
+	</div>
+  <section id="jeu">
+    <div class="case">
+      <div class="resultat-joueur bg-img-joueur"></div>
+    </div>
+    <div class="case">
+      <div class="resultat-partie"></div>
+    </div>
+    <div class="case">
+      <div class="resultat-robot bg-img-robot"></div>
+    </div>
+  </section>
+
+	<script>
+		const buttons = document.querySelectorAll("button");
+		// const resultat = document.querySelector(".resultat");
+
+		for (let i = 0; i < buttons.length; i++) {
+		  buttons[i].addEventListener('click', function() {
+		    const joueur = buttons[i].innerHTML;
+		    const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
+		    let resultat = "";
+		    // resultat.innerHTML = joueur + "       " + robot;
+		    if (joueur===robot) {
+		      resultat = "Egalité";
+		    }
+		    else if ((joueur === "Pierre" && robot === "Ciseaux") || (joueur === "Ciseaux" && robot === "Feuilles") || (joueur === "Feuilles") && (robot === "Pierre")) {
+		      resultat = "Gagné";
+		    }
+		    else {
+		      resultat = "Perdu";
+		    }
+		 
+		     document.querySelector(".resultat-joueur").innerHTML = `
+		  <p>Joueur :</p> <p class="bold">${joueur}</p>
+		`  ;
+		     document.querySelector(".resultat-partie").innerHTML = `
+		  <p>Résultat :</p> <p class="bold">${resultat}</p>
+		`  ;
+		     document.querySelector(".resultat-robot").innerHTML = `
+		  <p>Robot :</p> <p class="bold">${robot}</p>
+		`  ;
+		    
+		  });
+		  
+		}
+
+
+	</script>
+	<style type="text/css">
+		.box {
+		  display : flex;
+		  align-items : center;
+		  justify-content : center;
+		  padding : 10px ;
+		}
+		button {
+		  padding : 10px;
+		  margin: 5%;
+		  border-radius : 4px;
+		  outline : none;
+		  border : none;
+		  color : #fff;
+		  background-color : blue;
+		  cursor: pointer;
+		  transition : 0.2s;
+		}
+		button:active {
+		  transform : scale(0.95);
+		}
+		.resultat {
+		  border : solid black 1px;
+		  height : 50px;
+		  text-align : center;
+		  font-weight: bold;
+		  padding : 10px;
+		}
+		.bg-img-a {
+		    background-image: url("./images/a.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
+		.bg-img-b {
+		    background-image: url("./images/b.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
+		.bg-img-c {
+		    background-image: url("./images/c.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
+
+		.bg-img-joueur {
+		    background-image: url("./images/jo.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+		    height: 100%;
+		}
+		.bg-img-robot {
+		    background-image: url("./images/ro.jpg");
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+		    height: 100%;
+		}
+
+		p {
+		  font-size: 16px;
+		  padding:0px;
+		  margin:0px 10px 0px 10px;
+		  text-align: center;
+		}
+		.bold {
+		  font-weight: bold;
+		}
+
+		#jeu{
+		    display: grid;
+		    grid-template-columns: repeat(3, 1fr);
+		    width: 450px;
+		    margin: auto;
+		}
+
+		.case{
+		    border: 1px solid black;
+		    min-height: 150px;
+		    line-height: 100px;
+		    font-size: 60px;
+		}
+	</style>
+</body>
+</html>

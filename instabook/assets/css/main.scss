@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a{
+    color: #e74c3c;
+    &:hover{
+        color: #c0392b;
+    }
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .image:nth-child(1){
+            background-color: #333;
+            background-image: url('../../assets/images/manga-skin-first.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 1 / 4 / 3;
+        }
+        .image:nth-child(2){
+            background-color: #333;
+            background-image: url('../../assets/images/dragon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 3 / 4 / 5;
+        }
+        .image:nth-child(3){
+            background-color: #333;
+            background-image: url('../../assets/images/manga-skin-second.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 5 / 4 / 7;
+        }
+        .image:nth-child(4){
+            background-color: #333;
+            background-image: url('../../assets/images/camp-in-the-forest.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 4 / 4 / 7 / 7;
+        }
+        .image:nth-child(5){
+            background-color: #333;
+            background-image: url('../../assets/images/fullmetal-alchemist.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 4 / 1 / 7 / 4;
+        }
+        .image:nth-child(6){
+            background-color: #333;
+            background-image: url('../../assets/images/midorya.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 7 / 1 / 10 / 3;
+        }
+        .image:nth-child(7){
+            background-color: #333;
+            background-image: url('../../assets/images/ninja-manga.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            grid-area: 7 / 3 / 10 / 7;
+        }
+        .image:nth-child(8){
+            background-color: #333;
+            background-image: url('../../assets/images/naruto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 450px;
+            grid-area: 10 / 1 / 13 / 7;
+        }
+        .image:not(:hover){
+            filter: brightness(0.8);
+            z-index: 50;
+        }
+
+        .image:hover{
+            filter: brightness(01);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    footer{
+        position: absolute;
+        padding: 15px 10px;
+        background-color: black;
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img,h2{
+                margin: 5px;
+            }
+            img{
+                border-radius:50%;
+            }
+        }
+    }
+}

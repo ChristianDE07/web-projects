@@ -1,0 +1,41 @@
+/* Footer */
+footer{
+	background: lightblue;
+	min-height: 200px;
+	background-image: url('../../assets/images/footer/footer-banner-a001.jpg');
+	object-fit: cover;
+	background-position: top center;
+	width: 100%;
+	display: flex;
+	padding: 25px 0px;
+}
+footer .footer-container{
+	color: #FBFBFB;
+	text-align: center;
+	margin: auto;
+}
+
+/* Footer Content */
+footer .footer-container h1{
+	margin: 15px 0;
+}
+footer .footer-container h5{
+	margin: 10px 0;
+	padding: 10px 0;
+	line-height: 18px;
+}
+
+/* Footer Copyright Part */
+footer .footer-container p{
+	color: white;
+	font-family: sans-serif;
+	line-height: 20px;
+}
+footer .footer-container a{
+	text-decoration: none;
+	color: #2874A6;
+	font-family: sans-serif;
+}
+footer .footer-container a:hover{
+	text-decoration: underline;
+}

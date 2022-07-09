@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+// Variables
+$grey : #9C9DA2;
+$dark-grey : #595B53;
+$blue : lightblue;
+
+// Basic Things
+a.grey-link{
+    color: $grey;
+}
+a,button{
+    color: $blue;
+}
+p, h4{
+    color: $grey;
+}
+.blue-circle{
+    color: $blue;
+}
+// Basic Text Things
+h1,h2,h3,h4,h5,h6,p,a,li,button,input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+h1,h2,h3,h5,h6,i,input{
+    color: #EDEDEE;
+}
+input{
+    border: 0;
+    outline: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.verify-button{
+    background-color: $blue;
+    border: none;
+    min-width: 250px;
+    min-height: 45px;
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    color: #000000;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/backgrounds/background-mountain.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    header{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        section.hero{
+            background-color: lightsalmon;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            border-radius: 22px;
+            div.head-hero{
+                div.title-head{
+                    display: flex;
+                }
+                div.already-head{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+nav label, nav #toggle{
+    display: none;
+}
+@media all and (max-width: 768px){
+    // Navigation Section
+    nav{
+        position: relative;
+        width: 100%;
+        min-height: 65px;
+        display: grid;
+        align-items: center;
+        ul{
+            li{
+                display: inline-flex;
+                align-items: center;
+                margin: 0 25px;
+                i{
+                    padding: 0 8px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+	header nav #links{
+        top: 65px;
+		background-color: #ECF0F1;
+        width: 100%;
+        min-height: 150px;
+        height: auto;
+        z-index: 50;
+        li{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+	}
+	header nav #links {
+		display: none;
+	}
+	header nav #links a{
+		padding: 14px 16px;
+	}
+	header nav label{
+		position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+		width: 35px;
+		height: 35px;
+		display: block;
+		cursor: pointer;
+		font-size: 35px;
+		text-align: center;
+	}
+    #toggle:checked + #links{
+        position: absolute;
+        display: block;
+    }
+    // Hero Section
+    section.hero{
+        width: 100%;
+        padding: 95px 0;
+        div.head-hero{
+            margin: 15px;
+            padding: 10px;
+            div{
+                padding: 8px 0;
+            }
+            div.title-head{
+                display: flex;
+            }
+            div.already-head{
+                display: flex;
+                p,a{
+                    padding: 0 4px;
+                }
+            }
+        }
+        div.all-inputs{
+            margin: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            div.in-names{
+                display: flex;
+                div.inputs{
+                    width: 100%;
+                }
+            }
+            div.inputs{
+                width: auto;
+                margin: 15px 10px;
+            }
+        }
+        div.submits{
+            margin: 15px;
+            display: grid;
+            div.sub-content{
+                width: auto;
+                margin: 15px 10px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px){
+    // Navigation Section
+    nav{
+        width: 100%;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        ul{
+            li,div{
+                display: inline-flex;
+                align-items: center;
+                margin: 0 45px;
+                i{
+                    padding: 0 8px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    // Hero Section
+    section.hero{
+        justify-content: center;
+        margin: 0 auto;
+        width: 650px;
+        padding: 100px 0;
+        div.head-hero{
+            margin: 15px;
+            padding: 10px;
+            div{
+                padding: 8px 0;
+            }
+            div.title-head{
+                display: flex;
+            }
+            div.already-head{
+                display: flex;
+                p,a{
+                    padding: 0 4px;
+                }
+            }
+        }
+        div.all-inputs{
+            margin: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            div.in-names{
+                display: flex;
+                div.inputs{
+                    width: 100%;
+                }
+            }
+            div.inputs{
+                width: auto;
+                margin: 15px 10px;
+            }
+        }
+        div.submits{
+            margin: 15px;
+            display: grid;
+            div.sub-content{
+                margin: 15px 10px;
+            }
+        }
+    }
+}
+@media all and (min-width: 1280px){
+    // Navigation Section
+    nav{
+        width: 100%;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        ul{
+            li,div{
+                display: inline-flex;
+                align-items: center;
+                margin: 0 45px;
+                i{
+                    padding: 0 8px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    // Hero Section
+    section.hero{
+        justify-content: center;
+        margin: auto;
+        width: 950px;
+        padding: 100px 0;
+        div.head-hero{
+            margin: 15px;
+            padding: 10px;
+            div{
+                padding: 8px 0;
+            }
+            div.title-head{
+                display: flex;
+            }
+            div.already-head{
+                display: flex;
+                p,a{
+                    padding: 0 4px;
+                }
+            }
+        }
+        div.all-inputs{
+            margin: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            div.in-names{
+                display: flex;
+                div.inputs{
+                    width: 100%;
+                }
+            }
+            div.inputs{
+                width: auto;
+                margin: 15px 10px;
+            }
+        }
+        div.submits{
+            margin: 15px;
+            display: grid;
+            div.sub-content{
+                margin: 15px 10px;
+            }
+        }
+    }
+}
+
+
+// Inputs Styles
+.inputs{
+    background-color: $dark-grey;
+    width: 265px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    display: flex;
+    transition: 0.4s;
+    &:hover{
+        box-shadow: 0 0 8px #5195EA;
+    }
+    &:focus-within{
+        outline: 2px solid #5195EA;
+        box-shadow: 0 0 16px #5195EA;
+    }
+    .left-in{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        .text-top{
+            padding: 5px 0;
+            width: auto;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: 0;
+            background: none;
+            &::placeholder{
+                color: $grey;
+            }
+        }
+    }
+    .right-in{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        i{
+            float: right;
+            width: auto;
+            height: auto;
+        }
+    }
+}

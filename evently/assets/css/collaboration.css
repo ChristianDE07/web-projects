@@ -1,0 +1,64 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Collaboration */
+.collaboration{
+	background-color: #FBFBFB;
+	padding: 60px 0px 60px 0px;
+}
+.collaboration .collaboration-container{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	background-color: #FBFBFB;
+}
+
+/* Collaboration Up Part */
+.collaboration .collaboration-container .collaboration-up{
+	font-family: sans-serif;
+	text-align: center;
+	max-width: auto;
+	color: #1A1A1A;
+	margin: 15px 0px;
+}
+.collaboration .collaboration-container .collaboration-up h2{
+	margin: 15px 0px;
+}
+.collaboration .collaboration-container .collaboration-up h5{
+	line-height: 20px;
+	margin: 15px 0px;
+}
+
+/* Collaboration Down Part */
+.collaboration .collaboration-container .collaboration-down{
+	font-family: sans-serif;
+	color: #1A1A1A;
+	margin: 25px 0px;
+}
+.collaboration .collaboration-container .collaboration-down h3{
+	margin: 10px 0px;
+}
+.collaboration .collaboration-container .collaboration-down h5{
+	line-height: 18px;
+	margin: 10px 0px;
+}
+.collaboration .collaboration-container .collaboration-down i{
+	margin: 15px 0px;
+}
+.collaboration .collaboration-container .collaboration-down i.blue-icon{
+	color: #55A1F2;
+	font-size: 18px;
+}
+
+/* Collaboration Card */
+.collaboration .collaboration-container .collaboration-down .collaboration-cards .collaboration-card{
+	width: auto;
+	min-height: 150px;
+	background-color: #FBFBFB;
+	margin: 5px 15px;
+	padding: 15px;
+}
+.collaboration .collaboration-container .collaboration-down .collaboration-cards .collaboration-card.active{
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.15);
+}

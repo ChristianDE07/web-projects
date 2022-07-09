@@ -1,0 +1,338 @@
+/* IMPORTS FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Readex+Pro&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+img{
+  width: 100%;
+  pointer-events: none;
+}
+
+/* Textes */
+p, a, h1, h2, h3, h4, h5, h6{
+  text-decoration: none;
+  font-family: 'Readex Pro', sans-serif;
+  color: #121213;
+}
+
+/* FONTS TEXTES */
+.font-smooth{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* COULEURS TEXTES */
+.text-white{
+  color: #F0F3F4;
+}
+.text-sky{
+  color: #D6EAF8;
+}
+
+/* ALIGNEMENT DES TEXTES */
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+
+/* BUTTON STYLE */
+button{
+  padding: 5px 10px;
+  transition: 1.0s;
+  border-radius: 5px;
+  background-color: #212324;
+  border: none;
+  color: #F4F6F7;
+  font-size: 20px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #101111;
+  color: #D6EAF8;
+}
+
+/* HOVER IMAGE PART */
+body{
+  background-color: #17202A;
+}
+
+
+
+/* CONTENT PART */
+.container{
+  display: grid;
+  height: 90vh;
+  grid-gap: 0.2rem;
+}
+
+/* NAVIGATION BAR */
+label, #toggle
+{
+    display: none;
+}
+
+nav{
+  background-color: #5D6D7E;
+  grid-area:nav;
+}
+nav:hover {
+  cursor: default;
+}
+
+nav ul {
+  list-style-type : none;
+}
+
+nav ul div {
+  display : inline-block;
+  padding: 15px 25px 15px 25px;
+}
+nav ul li {
+  display : inline-block;
+  padding: 0px 15px 0px 15px;
+}
+/* NAVBAR TEXTES */
+nav ul li h1 {
+  color: #D6EAF8;
+}
+nav ul li h1:hover {
+  color: #BDD4E7;
+}
+
+nav ul li p {
+  color: #F0F3F4;
+}
+nav ul li p:hover {
+  color: #DEE2E4;
+}
+
+
+/* Main Content */
+main{
+/*   background-color: yellow; */
+  grid-area:main;
+  padding: 15px;
+}
+#content1{
+/*   background-color: orange; */
+  grid-area:content1;
+  margin: 15px;
+}
+#content2{
+/*   background-color: blue; */
+  grid-area:content2;
+  margin: 15px;
+}
+#content3{
+/*   background-color: grey; */
+  grid-area:content3;
+  margin: 15px;
+}
+#content4{
+/*   background-color: purple; */
+  grid-area:content4;
+  margin: 15px;
+}
+#content5{
+/*   background-color: black; */
+  grid-area:content5;
+  margin: 15px;
+}
+#content6{
+/*   background-color: pink; */
+  grid-area:content6;
+  margin: 15px;
+}
+
+/*   Download Button   */
+.image{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* FOOTER PART */
+footer{
+  position: relative;
+  background-color: #181818;
+  padding: 20px;
+  grid-area: footer;
+}
+footer div p, footer .social-links{
+  color: #F0F3F4;
+  padding: 15px 45px;
+}
+footer div h1{
+  color: #D6EAF8;
+  padding: 15px 45px;
+}
+footer .social-links:hover{
+  cursor: default;
+}
+footer .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  margin: 0px 7px 0px 7px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: 0.5s;
+}
+footer .social-links a:hover{
+  color: #AED6F1;
+}
+
+
+
+/* Mobile / Small tablet */
+/* Tablet / Small desktop */
+@media (max-width: 768px) {
+    nav .main_pages{
+        display: none;
+        flex-direction: column;
+        background: #34495E;
+        height: auto;
+    }
+    nav .main_pages a{
+        width: 50%;
+        padding: 10px;
+    }
+    label{
+        width: 30px;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 150%;
+        color: white;
+        cursor: pointer;
+    } 
+    #toggle:checked + .main_pages{
+        display: flex;
+    }
+
+    /*   Download Button   */
+    .box{
+      position: relative;
+      width: auto;
+      border-top-left-radius: 80px 80px;
+      border-top-right-radius: 80px 80px;
+      background-color: white;
+    }
+    .image{
+      opacity: 1;
+      transition: .5s ease;
+      border-top-left-radius: 40px 40px;
+      border-top-right-radius: 40px 40px;
+      backface-visibility: hidden;
+    }
+    .middle{
+      transition: .5s ease;
+      position: relative;
+      text-align: center;
+    }
+    .box button{
+      margin: 5px;
+      padding: 16px 32px;
+    }
+  
+    /*  CONTAINER GRID SYSTEM  */
+    .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      grid-template-areas:
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "footer";
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) and (max-width: 1268px) {
+    /*   Download Button   */
+     .box{
+      position: relative;
+      width: auto;
+     }
+    .middle{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .box:hover .image{
+      opacity: 0.3;
+    }
+    .box:hover .middle{
+      opacity: 1;
+    }
+    .box button{
+      padding: 16px 32px;
+    }
+  
+    /*  CONTAINER GRID SYSTEM  */
+    .container{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.8fr 0.8fr 0.8fr 1fr;
+      grid-template-areas:
+        "content1 content2"
+        "content3 content4"
+        "content5 content6"
+        "footer footer";
+    }
+}
+/* Large desktop */
+@media (min-width: 1269px) {
+    /*   Download Button   */
+     .box{
+      position: relative;
+      width: auto;
+     }
+    .middle{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .box:hover .image{
+      opacity: 0.3;
+    }
+    .box:hover .middle{
+      opacity: 1;
+    }
+    .box button{
+      padding: 16px 32px;
+    }
+  
+    /*  CONTAINER GRID SYSTEM  */
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.8fr 0.8fr 1fr;
+      grid-template-areas:
+        "content1 content2 content3"
+        "content4 content5 content6"
+        "footer footer footer";
+  }
+}

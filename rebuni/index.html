@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian De">
+    <meta name="description"
+        content="Rebuni is a Blog Photo Concept website that actually is a portfolio project developped by Christian De and designed by Tomasz Mazurczak on Dribbble.">
+    <meta name="keywords"
+        content="christian de, christian, mydevmood.com, mydevmood, dribbble, Tomasz Mazurczak, designer, design, developped, developper, website, template, project, portfolio, drone, rebuni,">
+    <meta name="reply-to" content="contact@mydevmood.com">
+    <meta name="robots" content="index, follow">
+    <!-- Titre du site -->
+    <title>Rebuni - Blog Photo concept - 23/03/2022</title>
+    <!-- Favicon du Site -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicons/favicon.ico">
+    <!-- SCSS Imports -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <!-- JAVASCRIPT Imports -->
+    <!-- Fontawesome Kit Code -->
+    <script src="https://kit.fontawesome.com/7febc46414.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#most-popular">Most Popular</a></li>
+            </ul>
+            <ul class="middle">
+                <li>
+                    <a href="#">
+                        <h2>Rebuni</h2>
+                    </a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li><a href="#my-account">My Account</a></li>
+                <li><a href="#my-cart">My Cart</a></li>
+                <li><button onclick="searchQuery()"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="left">
+            <div class="links">
+                <button class="numberA chosen" id="bA" onclick="changeDivFirst()">01</button>
+                <button class="numberB not-chosen" id="bB" onclick="changeDivSecond()">02</button>
+                <button class="numberC not-chosen" id="bC" onclick="changeDivThird()">03</button>
+                <button class="numberD not-chosen" id="bD" onclick="changeDivFourth()">04</button>
+            </div>
+            <style>
+                #first {
+                    display: block;
+                }
+
+                #second,
+                #third,
+                #fourth {
+                    display: none;
+                }
+            </style>
+            <div class="container">
+                <div id="first">
+                    <div class="top">
+                        <p>23 January 2022 <i class="fa-solid fa-circle orange"></i> Blog</p>
+                    </div>
+                    <div class="context">
+                        <h1>We create a modern beautiful photo.</h1>
+                        <img draggable="false" src="./assets/images/thumbnails/photo.svg" alt="phtograph takes a photo"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div id="second">
+                    <div class="top">
+                        <p>22 December 2021 <i class="fa-solid fa-circle orange"></i> Blog</p>
+                    </div>
+                    <div class="context">
+                        <h1>We create a modern beautiful website.</h1>
+                        <img draggable="false" src="./assets/images/thumbnails/website.svg"
+                            alt="persons are developing a website" loading="lazy">
+                    </div>
+                </div>
+                <div id="third">
+                    <div class="top">
+                        <p>21 June 2021 <i class="fa-solid fa-circle orange"></i> Blog</p>
+                    </div>
+                    <div class="context">
+                        <h1>We create a modern beautiful video.</h1>
+                        <img draggable="false" src="./assets/images/thumbnails/video.svg"
+                            alt="persons are creating a video" loading="lazy">
+                    </div>
+                </div>
+                <div id="fourth">
+                    <div class="top">
+                        <p>20 January 2021 <i class="fa-solid fa-circle orange"></i> Blog</p>
+                    </div>
+                    <div class="context">
+                        <h1>We create a modern beautiful article.</h1>
+                        <img draggable="false" src="./assets/images/thumbnails/blog.svg" alt="modern blog design"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <li><a href="#facebook">Facebook</a></li>
+                    <li><a href="#twitter">Twitter</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <i class="fa-solid fa-circle sea-blue"></i>
+                <h4>Air drone</h4>
+                <p>We used a drone and took photos at different times of the day. Do you go away often, and beautiful
+                    photos are your favorite souvenirs from every vacation? Think about buying a drone.</p>
+                <h4>Knowledge</h4>
+                <p>We are a team of experienced people who implement the most advanced projects.</p>
+                <p>Project developped by <a href="https://mydevmood.com/">Christian De </a>and designed by <a
+                        href="https://dribbble.com/shots/15993980-Blog-Photo-Website-concept">Tomasz Mazurczak</a> on
+                    Dribbble.</p>
+            </div>
+            <div class="bottom">
+                <h4>Send your inquiry</h4>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

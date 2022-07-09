@@ -1,0 +1,67 @@
+/* Navbar Section */
+nav{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Nav Left */
+nav ul.left{
+	justify-content: left;
+	display: flex;
+	align-items: center;
+	width: auto;
+	text-align: left;
+	line-height: 14px;
+}
+
+/* Nav Middle */
+nav ul.middle{
+	width: auto;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+}
+nav ul li{
+	padding: 0 15px;
+}
+/* Nav #Links */
+header nav a {
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  position: relative;
+}
+header nav a:hover{
+	text-decoration: underline;
+}
+
+/* Nav Right */
+nav ul.right{
+	justify-content: right;
+	width: auto;
+	text-align: right;
+}
+nav ul.right button{
+	border: solid 2px #ECF0F1;
+	border-radius: 10px;
+	height: 40px;
+	min-width: 135px;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0);
+	transition: 0.8s;
+}
+nav ul.right button:hover{
+	background-image: url('../../assets/images/banners/mountains.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-size: 18px;
+}
+
+
+/* Responsive Nav Menu Icon */
+nav label, nav #toggle{
+    display: none;
+}

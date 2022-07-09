@@ -1,0 +1,7 @@
+/* Section .Content */
+section.content{
+	text-align: center;
+}
+section.content a:hover{
+	color: white;
+}

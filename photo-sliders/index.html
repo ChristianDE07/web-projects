@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!-- Meta -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian De">
+    <meta name="description" content="Slider webpage for a photographer">
+    <meta name="keywords" content="slides,slide,christian de,mydevmood.com,mydevmood,photographer,photo,black and white,images,portoflio,project,template">
+    <meta name="reply-to" content="contact@mydevmood.com">
+    <meta name="robots" content="index, follow">
+    <!-- Titre du site -->
+    <title>Photos Slider by Christian De - Mydevmood.com</title>
+    <!-- Favicon du Site -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://assets.mydevmood.com/img/favicon.ico">
+    <!-- SCSS Imports -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- JAVASCRIPT Imports -->
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div id="openedImage" style="z-index: 500;position: fixed;width: 100%;height: 100%;top: 0;
+    left: 0;" onclick="closeImage()">
+        <img src="">
+    </div>
+    <div class="sliders sliders-0">
+        <div id="house" class="slide house" draggable="true" onclick="openImage(this.id)">
+            <span><h1>House</h1></span>
+        </div>
+        <div id="cassettes" class="slide cassettes" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Cassettes</h1></span>
+        </div>
+        <div id="desert" class="slide desert" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Desert</h1></span>
+        </div>
+        <div id="city-scape" class="slide city-scape" draggable="true" onclick="openImage(this.id)">
+            <span><h1>City Scape</h1></span>
+        </div>
+        <div id="savana" class="slide savana" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Savana</h1></span>
+        </div>
+    </div>
+    <div class="sliders sliders-1">
+        <div id="cassettes" class="slide cassettes" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Cassettes</h1></span>
+        </div>
+        <div id="city-scape" class="slide city-scape" draggable="true" onclick="openImage(this.id)">
+            <span><h1>City Scape</h1></span>
+        </div>
+        <div id="desert" class="slide desert" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Desert</h1></span>
+        </div>
+        <div id="house" class="slide house" draggable="true" onclick="openImage(this.id)">
+            <span><h1>House</h1></span>
+        </div>
+        <div id="savana" class="slide savana" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Savana</h1></span>
+        </div>
+    </div>
+    <div class="sliders sliders-2">
+        <div id="desert" class="slide desert" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Desert</h1></span>
+        </div>
+        <div id="cassettes" class="slide cassettes" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Cassettes</h1></span>
+        </div>
+        <div id="city-scape" class="slide city-scape" draggable="true" onclick="openImage(this.id)">
+            <span><h1>City Scape</h1></span>
+        </div>
+        <div id="savana" class="slide savana" draggable="true" onclick="openImage(this.id)">
+            <span><h1>Savana</h1></span>
+        </div>
+        <div id="house" class="slide house" draggable="true" onclick="openImage(this.id)">
+            <span><h1>House</h1></span>
+        </div>
+    </div>
+        
+</body>
+</html>

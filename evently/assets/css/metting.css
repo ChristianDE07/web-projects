@@ -1,0 +1,113 @@
+/* Metting Part */
+.metting{
+	background: rgb(244,246,247);
+	background: linear-gradient(90deg, rgba(244,246,247,1) 0%, rgba(251,251,251,1) 34%, rgba(251,251,251,1) 100%);
+}
+
+/* Metting Left Part */
+.metting .metting-container .metting-left .metting-images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.metting .metting-container .metting-left .metting-images .metting-image{
+	width: 33.3%;
+}
+
+
+.metting .metting-container .metting-left .metting-images .active-metting-image .metting-image-content{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	width: 100%;
+	color: #FBFBFB;
+	font-family: sans-serif;
+}
+
+/* Metting Images / All of them */
+.metting-images{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.metting-images:hover{
+	cursor: crosshair;
+}
+
+.metting .metting-container .metting-left .metting-images .metting-image .metting-image-content{
+	width: 100%;
+	height: 150px;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	color: white;
+	line-height: 26px;
+}
+.metting .metting-container .metting-left .metting-images .metting-image:hover .metting-image-content{
+	opacity: 1;
+}
+
+/* Metting All */
+.metting-image{
+	transition: 0.4s;
+	position: relative;
+}
+/* Metting First, Second and Third */
+.m-first{
+	width: 33.3%;
+	height: 400px;
+	background-image: url('../../assets/images/metting/metting-person-a001.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.m-second{
+	width: 33.3%;
+	height: 400px;
+	background-image: url('../../assets/images/metting/metting-person-a002.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.m-third{
+	width: 33.3%;
+	height: 400px;
+	background-image: url('../../assets/images/metting/metting-person-a003.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Active Metting Image - Content */
+.metting .metting-container .metting-left .metting-images .active-metting-image h3{
+	margin: 10px 0px;
+}
+.metting .metting-container .metting-left .metting-images .active-metting-image h5{
+}
+.metting .metting-container .metting-left .metting-images .active-metting-image button{
+	margin: 25px 0px;
+}
+
+/* Metting Right Part */
+.metting .metting-container .metting-right{
+	font-family: sans-serif;
+}
+.metting .metting-container .metting-right h2{
+}
+.metting .metting-container .metting-right h5{
+	line-height: 20px;
+	margin: 5px 0px;
+}

@@ -1,0 +1,174 @@
+/* Most Importants */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+	font-family: sans-serif;
+	user-select: none;
+}
+
+p,
+a,
+strong,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	user-select: text;
+}
+
+body {
+	background-color: #EBE9DE;
+}
+
+img {
+	pointer-events: none;
+}
+
+/* SCROLLBAR */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: #FBFBFB;
+	border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	border: 3px solid transparent;
+	background-clip: content-box;
+	background-color: #F7DC6F;
+}
+
+/* Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+	color: #010101;
+}
+
+a,
+p,
+li,
+button {
+	color: #676662;
+}
+
+a {
+	text-decoration: none;
+}
+
+.second a:hover {
+	text-decoration: underline;
+}
+
+/* BANNER */
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	height: auto;
+	background-color: #2E4053;
+	color: #FBFBFB;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.banner h4 {
+	text-align: center;
+	width: 100%;
+	line-height: 24px;
+	color: #FBFBFB;
+}
+
+.banner a {
+	color: #55A1F2;
+	text-decoration: none;
+}
+
+.banner a:hover {
+	color: #74B5FA;
+	text-decoration: underline;
+}
+
+.button-close {
+	height: 24px;
+	width: 80px;
+	border-radius: 25px;
+	background-color: #55A1F2;
+	border: none;
+	color: #FBFBFB;
+	transition: 0.4s;
+	font-family: sans-serif;
+}
+
+.button-close:hover {
+	background-color: #74B5FA;
+	color: #FBFBFB;
+	cursor: pointer;
+}
+
+/* Display = None with IDnone */
+#none {
+	display: none;
+}
+
+
+
+/* Special Button Classes */
+.sign-up {
+	background-color: #FFE800;
+	box-shadow: -6px 6px 0 #404040;
+	color: #404040;
+	font-family: arial;
+}
+
+.get-started {
+	background-color: #FFE800;
+	box-shadow: -6px 6px 0 #404040;
+	color: #404040;
+	font-family: arial;
+}
+
+/* :hover */
+.sign-up:hover {
+	box-shadow: -3px 3px 0 #404040;
+}
+
+.get-started:hover {
+	box-shadow: -3px 3px 0 #404040;
+}
+
+/* :before */
+.sign-up:before {
+	background-color: #404040;
+}
+
+.get-started:before {
+	background-color: #404040;
+}
+
+/* ::after */
+.sign-up::after {
+	background-color: #404040;
+}
+
+.get-started::after {
+	background-color: #404040;
+}
+
+
+
+.btn {
+	margin: 0 0 5px 0;
+}
